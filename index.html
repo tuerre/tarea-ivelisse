@@ -1,0 +1,455 @@
+Voy a generar un documento guía de estudio que contiene la solución completa y detallada a cada uno de los ejercicios de la práctica de física.
+I will now generate the document containing all the solved sections of the practice sheet.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Solución Práctica de Física - Leyes de Newton</title>
+    <style>
+        @page { margin: 0; }
+        *, *::before, *::after { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        html { background-color: #ffffff; }
+        @media (prefers-color-scheme: dark) {
+            html { background-color: #1f1f1f; }
+        }
+        body { 
+            padding: 24px 0;
+            margin: 0 auto;
+            max-width: 900px !important;
+            border: none !important;
+            background: transparent !important; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1e293b;
+        }
+        .page {
+            height: 297mm;
+            margin: 0 auto 12px auto;
+            padding: 18mm 18mm 12mm 18mm;
+            background-color: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+        @media screen and (max-width: 600px) {
+            body { padding: 16px 0; }
+            .page { margin: 0 auto 8px auto; border: none; padding: 12px 20px; }
+        }
+        .page-content {
+            flex: 1 1 0;
+            min-height: 0;
+            overflow: hidden;
+        }
+        .page-footer {
+            flex-shrink: 0;
+            margin-top: auto;
+            padding-top: 4mm;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 8.5pt;
+            color: #64748b;
+        }
+
+        /* Styles for Academic Sheet Header */
+        .header-box {
+            border: 2px solid #0f172a;
+            border-radius: 6px;
+            padding: 12px;
+            background-color: #f8fafc;
+            margin-bottom: 16px;
+        }
+        .header-title {
+            text-align: center;
+            font-size: 14pt;
+            font-weight: bold;
+            color: #0f172a;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .header-subtitle {
+            text-align: center;
+            font-size: 10pt;
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .header-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 16px;
+            font-size: 9pt;
+            color: #334155;
+            border-top: 1px dashed #cbd5e1;
+            padding-top: 8px;
+        }
+
+        /* Section Headings */
+        .section-header {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-size: 11pt;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Problem Card */
+        .problem-card {
+            border: 1px solid #cbd5e1;
+            border-left: 4px solid #2563eb;
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+        }
+        .problem-title {
+            font-weight: bold;
+            font-size: 9.5pt;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+        .answer-text {
+            font-size: 9pt;
+            color: #334155;
+            line-height: 1.4;
+        }
+        .answer-text p {
+            margin: 3px 0;
+        }
+        
+        /* Vector & DCL Diagram Box */
+        .dcl-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 6px;
+            background: #f8fafc;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+        .dcl-svg {
+            flex-shrink: 0;
+        }
+
+        /* Formula & Calculation Box */
+        .math {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .calc-box {
+            background-color: #f1f5f9;
+            border-radius: 4px;
+            padding: 6px 10px;
+            font-size: 9pt;
+            margin-top: 4px;
+            border-left: 3px solid #059669;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+
+        ul {
+            margin: 4px 0;
+            padding-left: 18px;
+            font-size: 9pt;
+        }
+        li {
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+<div contenteditable="true">
+
+    <!-- PAGE 1 -->
+    <section class="page">
+        <div class="page-content">
+            <div class="header-box">
+                <div class="header-title">Solución Oficial: Práctica de Física</div>
+                <div class="header-subtitle">Secuencia 1: Leyes que rigen el movimiento de traslación (Leyes de Newton)</div>
+                <div class="header-meta">
+                    <div><strong>Año Escolar:</strong> 2026-2027</div>
+                    <div><strong>Puntuación Total:</strong> 15 Puntos</div>
+                    <div><strong>Asignatura:</strong> Física General</div>
+                    <div><strong>Profesora:</strong> Ivelisse Padilla López</div>
+                </div>
+            </div>
+
+            <div class="section-header">PARTE I: Análisis de Conceptos y Leyes de Newton</div>
+
+            <div class="problem-card">
+                <div class="problem-title">1. Modificación de masa en carrito acelerado sobre mesa plana:</div>
+                <div class="answer-text">
+                    <p><strong>a) ¿Qué ocurre con la aceleración?</strong> La aceleración del carrito se reduce a la tercera parte (<span class="math">a' = a / 3</span>). De acuerdo con la Segunda Ley de Newton (<span class="math">a = F_{neta} / m</span>), si la fuerza neta se mantiene constante y la masa aumenta al triple, la aceleración disminuye inversamente proporcional a este cambio.</p>
+                    <p><strong>b) Relación entre magnitudes:</strong> La aceleración y la masa son <strong>inversamente proporcionales</strong>, ya que a mayor masa, menor es la aceleración producida por una misma fuerza neta.</p>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">2. Rozamiento estático impulsando un automóvil de tracción total:</div>
+                <div class="answer-text">
+                    <p>Al girar, los neumáticos ejercen una fuerza hacia atrás contra el asfalto. Por la <strong>Tercera Ley de Newton (Acción y Reacción)</strong>, la superficie del camino ejerce una fuerza de reacción de igual magnitud pero en sentido opuesto (hacia adelante) sobre los neumáticos. Esta fuerza es el <em>rozamiento estático</em>, y es precisamente la que impulsa el vehículo hacia adelante sin que la rueda derrape.</p>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">3. Persona caminando sobre el suelo y caso sobre pista de hielo ideal:</div>
+                <div class="answer-text">
+                    <div class="dcl-container">
+                        <svg class="dcl-svg" width="160" height="90" viewBox="0 0 160 90" role="img">
+                            <title>Fuerzas al caminar</title>
+                            <line x1="10" y1="75" x2="150" y2="75" stroke="#94a3b8" stroke-width="3"/>
+                            <circle cx="80" cy="50" r="6" fill="#1e293b"/>
+                            <!-- F del pie sobre suelo (diagonal abajo/atras) -->
+                            <line x1="80" y1="50" x2="30" y2="70" stroke="#dc2626" stroke-width="2.5" marker-end="url(#red-arrow)"/>
+                            <text x="15" y="85" font-size="8.5" fill="#dc2626" font-weight="bold">F (Pie sobre Suelo)</text>
+                            <!-- F del suelo sobre pie (diagonal arriba/adelante) -->
+                            <line x1="80" y1="50" x2="130" y2="30" stroke="#2563eb" stroke-width="2.5" marker-end="url(#blue-arrow)"/>
+                            <text x="85" y="22" font-size="8.5" fill="#2563eb" font-weight="bold">F (Suelo sobre Pie)</text>
+                            <defs>
+                                <marker id="red-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#dc2626"/></marker>
+                                <marker id="blue-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/></marker>
+                            </defs>
+                        </svg>
+                        <div>
+                            <p><strong>a) Representación:</strong> El pie aplica <span class="math">F_{pie}</span> hacia atrás/abajo; la fricción del suelo reacciona con <span class="math">F_{suelo}</span> hacia adelante/arriba impulsando al caminante.</p>
+                            <p><strong>b) Pista de hielo ideal (<span class="math">f_s = 0</span>):</strong> Al no haber fricción, el suelo no puede ejercer la fuerza de reacción horizontal (<span class="math">\vec{F}_{react} = 0</span>). Vectorialmente, la fuerza neta horizontal es nula (<span class="math">\sum F_x = 0</span>), impidiendo cualquier aceleración. La persona resbalaría en el mismo lugar sin avanzar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">4. Condición para considerar un objeto extenso como punto material (PhET):</div>
+                <div class="answer-text">
+                    <p>Un objeto extenso (como la caja de 50 kg) puede modelarse como un <strong>punto material (o partícula)</strong> cuando su movimiento es exclusivamente de <strong>traslación pura</strong> (sin rotación ni deformaciones) y sus dimensiones físicas son irrelevantes en comparación con las distancias recorridas en el análisis cinemático.</p>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">5. Comparación entre acoplamiento con Elástico vs. Soga Rígida:</div>
+                <div class="answer-text">
+                    <ul>
+                        <li><strong>Soga Rígida (Nylon):</strong> Al no deformarse, transmite la fuerza instantáneamente. Ambos carritos se mueven como un único sistema rígido con la misma velocidad y aceleración en todo instante.</li>
+                        <li><strong>Elástico:</strong> Al deformarse, la fuerza depende de la elongación (Ley de Hooke: <span class="math">F = -kx</span>). Esto genera un desfase en la transmisión del movimiento, provocando oscilaciones, aceleración variable y velocidades no uniformes entre los carritos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Práctica de Física - Leyes de Newton</span>
+            <span>Página 1 de 3</span>
+        </footer>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page">
+        <div class="page-content">
+            <div class="section-header">PARTE II: Diagramas de Cuerpo Libre (DCL)</div>
+
+            <div class="problem-card">
+                <div class="problem-title">1. Caja de 50 kg en reposo sobre superficie horizontal lisa:</div>
+                <div class="dcl-container">
+                    <svg class="dcl-svg" width="140" height="110" viewBox="0 0 140 110" role="img">
+                        <title>DCL Caja en Reposo</title>
+                        <rect x="50" y="40" width="40" height="30" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+                        <circle cx="70" cy="55" r="3" fill="#0f172a"/>
+                        <!-- Normal -->
+                        <line x1="70" y1="55" x2="70" y2="10" stroke="#2563eb" stroke-width="2.5" marker-end="url(#b-arr)"/>
+                        <text x="78" y="20" font-size="9" fill="#2563eb" font-weight="bold">N (Normal)</text>
+                        <!-- Peso -->
+                        <line x1="70" y1="55" x2="70" y2="100" stroke="#dc2626" stroke-width="2.5" marker-end="url(#r-arr)"/>
+                        <text x="78" y="95" font-size="9" fill="#dc2626" font-weight="bold">P = m·g (Peso)</text>
+                        <defs>
+                            <marker id="b-arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/></marker>
+                            <marker id="r-arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#dc2626"/></marker>
+                        </defs>
+                    </svg>
+                    <div class="answer-text">
+                        <p><strong>Fuerzas actuantes:</strong></p>
+                        <ul>
+                            <li><span class="math">P</span> (Peso): Vertical hacia abajo, ejercida por la gravedad terrestre.</li>
+                            <li><span class="math">N</span> (Normal): Vertical hacia arriba, ejercida por la superficie.</li>
+                            <li>Como está en reposo, <span class="math">\sum F_y = N - P = 0 \implies N = P</span>. No hay fuerzas horizontales.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">2. Carrito bajando por un plano inclinado rugoso:</div>
+                <div class="dcl-container">
+                    <svg class="dcl-svg" width="160" height="110" viewBox="0 0 160 110" role="img">
+                        <title>DCL Plano Inclinado</title>
+                        <line x1="10" y1="90" x2="150" y2="30" stroke="#94a3b8" stroke-dasharray="4" stroke-width="2"/>
+                        <rect x="70" y="42" width="30" height="20" transform="rotate(-23 85 52)" fill="#cbd5e1" stroke="#334155" stroke-width="1.5"/>
+                        <circle cx="82" cy="50" r="3" fill="#0f172a"/>
+                        <!-- Peso (vertical hacia abajo) -->
+                        <line x1="82" y1="50" x2="82" y2="98" stroke="#dc2626" stroke-width="2" marker-end="url(#r-arr)"/>
+                        <text x="86" y="94" font-size="8.5" fill="#dc2626" font-weight="bold">P</text>
+                        <!-- Normal (perpendicular al plano) -->
+                        <line x1="82" y1="50" x2="62" y2="8" stroke="#2563eb" stroke-width="2" marker-end="url(#b-arr)"/>
+                        <text x="45" y="14" font-size="8.5" fill="#2563eb" font-weight="bold">N</text>
+                        <!-- Friccion kinetica (paralela hacia arriba del plano) -->
+                        <line x1="82" y1="50" x2="120" y2="34" stroke="#d97706" stroke-width="2" marker-end="url(#a-arr)"/>
+                        <text x="115" y="28" font-size="8.5" fill="#d97706" font-weight="bold">f<sub>k</sub></text>
+                        <defs>
+                            <marker id="a-arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d97706"/></marker>
+                        </defs>
+                    </svg>
+                    <div class="answer-text">
+                        <p><strong>Fuerzas actuantes:</strong></p>
+                        <ul>
+                            <li><span class="math">P</span> (Peso): Dirigido verticalmente hacia el centro de la Tierra.</li>
+                            <li><span class="math">N</span> (Fuerza Normal): Perpendicular a la superficie inclinada.</li>
+                            <li><span class="math">f_k</span> (Fuerza de Rozamiento Cinético): Paralela al plano, apuntando hacia arriba (opuesta a la bajada).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">3. DCL del sistema Carrito sobre Mesa con Fricción + Masa Colgante:</div>
+                <div class="answer-text">
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1; background: #f8fafc; padding: 6px; border-radius: 4px;">
+                            <p style="font-weight: bold; text-align: center; font-size: 8.5pt; color: #1e3a8a; margin:2px;">a) Carrito en la Mesa</p>
+                            <ul>
+                                <li><span class="math">N</span>: Hacia arriba (Suelo).</li>
+                                <li><span class="math">P_1</span>: Hacia abajo (Gravedad).</li>
+                                <li><span class="math">T</span> (Tensión): Horizontal hacia la derecha (Cuerda).</li>
+                                <li><span class="math">f_k</span> (Fricción): Horizontal hacia la izquierda.</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1; background: #f8fafc; padding: 6px; border-radius: 4px;">
+                            <p style="font-weight: bold; text-align: center; font-size: 8.5pt; color: #1e3a8a; margin:2px;">b) Masa Suspendida</p>
+                            <ul>
+                                <li><span class="math">T</span> (Tensión): Vertical hacia arriba.</li>
+                                <li><span class="math">P_2</span> (Peso = <span class="math">m_2 g</span>): Vertical hacia abajo.</li>
+                                <li>Acelera hacia abajo (<span class="math">P_2 > T</span>).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">PARTE III: Cálculos Cinemáticos y Dinámicos</div>
+
+            <div class="problem-card">
+                <div class="problem-title">1. Carrito arranca con <span class="math">v_0 = 0</span>, recorre <span class="math">x = 1.2\text{ m}</span> en <span class="math">t = 2.0\text{ s}</span>:</div>
+                <div class="answer-text">
+                    <p>Utilizamos la ecuación cinemática del movimiento rectilíneo uniformemente acelerado:</p>
+                    <div class="calc-box">
+                        <span class="math">x = v_0 t + \frac{1}{2} a t^2 \implies 1.2 = 0(2.0) + \frac{1}{2} a (2.0)^2 \implies 1.2 = 2.0 a</span><br>
+                        <span class="math">a = \frac{1.2}{2.0} = \mathbf{0.6\text{ m/s}^2}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">2. Carrito recorre <span class="math">x = 1.6\text{ m}</span> en el plano horizontal hasta detenerse (<span class="math">v_f = 0</span>) en <span class="math">t = 4.0\text{ s}</span>:</div>
+                <div class="answer-text">
+                    <p>Primero se determina la velocidad inicial <span class="math">v_0</span> empleando la distancia media: <span class="math">x = \left(\frac{v_0 + v_f}{2}\right) t \implies 1.6 = \left(\frac{v_0}{2}\right) 4.0 \implies v_0 = 0.8\text{ m/s}</span>.</p>
+                    <div class="calc-box">
+                        <p><strong>a) Módulo de la aceleración:</strong> <span class="math">a = \frac{v_f - v_0}{t} = \frac{0 - 0.8}{4.0} = -0.2\text{ m/s}^2 \implies |a| = \mathbf{0.2\text{ m/s}^2}</span></p>
+                        <p><strong>b) Características:</strong> Signo <span class="highlight">Negativo (-)</span> | Dirección: <span class="highlight">Horizontal</span> | Sentido: <span class="highlight">Opuesto al movimiento</span> (Desaceleración/Frenado).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <span>Práctica de Física - Leyes de Newton</span>
+            <span>Página 2 de 3</span>
+        </footer>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page">
+        <div class="page-content">
+            <div class="problem-card">
+                <div class="problem-title">3. Caja de masa <span class="math">m = 50\text{ kg}</span> sobre superficie horizontal (<span class="math">g = 9.8\text{ m/s}^2</span>):</div>
+                <div class="answer-text">
+                    <div class="calc-box">
+                        <p><strong>a) Peso de la caja (<span class="math">P</span>):</strong> <span class="math">P = m \cdot g = 50\text{ kg} \times 9.8\text{ m/s}^2 = \mathbf{490\text{ N}}</span></p>
+                        <p><strong>b) Fuerza Normal (<span class="math">N</span>):</strong> Como no hay aceleración vertical (<span class="math">\sum F_y = 0</span>): <span class="math">N - P = 0 \implies N = P = \mathbf{490\text{ N}}</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">4. Fuerza constante de <span class="math">F = 200\text{ N}</span> sobre bloque de <span class="math">m = 50\text{ kg}</span> sin fricción:</div>
+                <div class="answer-text">
+                    <div class="calc-box">
+                        <p><strong>a) Aceleración adquirida:</strong> <span class="math">a = \frac{F}{m} = \frac{200\text{ N}}{50\text{ kg}} = \mathbf{4\text{ m/s}^2}</span></p>
+                        <p><strong>b) Comportamiento de la rapidez:</strong> Aumenta de manera constante y uniforme a razón de <span class="math">4\text{ m/s}</span> cada segundo (Movimiento Rectilíneo Uniformemente Acelerado).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">5. Sistema de masa suspendida (<span class="math">m_2 = 2.0\text{ kg}</span>) y carrito (<span class="math">m_1 = 3.0\text{ kg}</span>) sin fricción:</div>
+                <div class="answer-text">
+                    <p>Aplicando la Segunda Ley de Newton a todo el sistema acoplado:</p>
+                    <div class="calc-box">
+                        <span class="math">F_{neta} = m_2 \cdot g = 2.0\text{ kg} \times 9.8\text{ m/s}^2 = 19.6\text{ N}</span><br>
+                        <span class="math">m_{total} = m_1 + m_2 = 3.0\text{ kg} + 2.0\text{ kg} = 5.0\text{ kg}</span><br>
+                        <span class="math">a = \frac{F_{neta}}{m_{total}} = \frac{19.6\text{ N}}{5.0\text{ kg}} = \mathbf{3.92\text{ m/s}^2}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">PARTE IV: Situaciones Problema y Equilibrio</div>
+
+            <div class="problem-card">
+                <div class="problem-title">1. Caja de 50 kg con fuerza de <span class="math">F = 92\text{ N}</span> a la derecha y fricción de <span class="math">F_r = 92\text{ N}</span> opuesta:</div>
+                <div class="answer-text">
+                    <div class="calc-box">
+                        <p><strong>Fuerza Neta en el eje horizontal:</strong> <span class="math">\sum F_x = F - F_r = 92\text{ N} - 92\text{ N} = \mathbf{0\text{ N}}</span></p>
+                    </div>
+                    <p style="margin-top:6px;"><strong>Estado posterior de movimiento:</strong> Si la caja ya se encontraba en movimiento antes de igualarse las fuerzas, continuará moviéndose a <strong>VELOCIDAD CONSTANTE</strong> (Movimiento Rectilíneo Uniforme).</p>
+                    <p><em>Explicación:</em> De acuerdo con la <strong>Primera Ley de Newton (Ley de la Inercia)</strong>, si la fuerza neta sobre un cuerpo es cero (<span class="math">\sum F = 0</span>), el objeto mantendrá su estado de movimiento previo sin acelerar ni frenar.</p>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">2. Condiciones vectoriales de equilibrio (Primera Ley de Newton):</div>
+                <div class="answer-text">
+                    <p><strong>a) Para mantenerse permanentemente en REPOSO (Equilibrio Estático):</strong></p>
+                    <p>La suma vectorial de todas las fuerzas actuantes debe ser igual a cero (<span class="math">\sum \vec{F} = 0</span>) y la velocidad inicial debe ser nula (<span class="math">\vec{v} = 0</span>).</p>
+
+                    <p style="margin-top: 6px;"><strong>b) Para desplazarse a VELOCIDAD CONSTANTE (Equilibrio Dinámico):</strong></p>
+                    <p>La suma vectorial de las fuerzas netas también debe ser cero (<span class="math">\sum \vec{F} = 0</span>), garantizando aceleración nula (<span class="math">\vec{a} = 0</span>), pero con una velocidad no nula (<span class="math">\vec{v} = \text{constante} \neq 0</span>).</p>
+                </div>
+            </div>
+
+        </div>
+        <footer class="page-footer">
+            <span>Práctica de Física - Leyes de Newton</span>
+            <span>Página 3 de 3</span>
+        </footer>
+    </section>
+
+</div>
+</body>
+</html>
+```eof
+
+He generado el documento en formato PDF estructurado en 3 páginas. Incluye la solución paso a paso de cada sección:
+- **Parte I:** Análisis conceptual y aplicación de la 2.ª y 3.ª Ley de Newton.
+- **Parte II:** Diagramas de Cuerpo Libre (DCL) renderizados con vectores claros para cada situación.
+- **Parte III:** Cálculos detallados cinemáticos y dinámicos con formulas y unidades.
+- **Parte IV:** Análisis de equilibrio estático y dinámico aplicando la 1.ª Ley de Newton.
